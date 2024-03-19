@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .login-form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .input-group i {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            color: #aaa;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px 40px 10px 30px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .input-group input:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+        .input-group .eye-icon {
+            cursor: pointer;
+        }
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .login-btn:hover {
+            background-color: #0056b3;
+        }
+        .forgot-link {
+            font-size: 12px;
+            color: #777;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .register-link {
+            font-size: 12px;
+            color: #777;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-form">
+    <h2>LOGIN</h2>
+
+    <form action="/action_page.php" method="post">
+        <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="No. Handphone/Email/Username" name="username" required>
+        </div>
+
+        <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" name="password" required>
+        </div>
+
+        <button type="submit" class="login-btn">Log in</button>
+
+        <a href="#" class="forgot-link">Lupa?</a>
+        <a href="#" class="register-link">Daftar</a>
+    </form>
+</div>
+
+</body>
+</html>

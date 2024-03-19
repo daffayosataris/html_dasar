@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:#e9b316;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            width: 300px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .login-title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .login-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .login-button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #888;
+            color: white;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .alternate-login {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .alternate-login div {
+            margin-bottom: 10px;
+        }
+        .alternate-login button {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: left;
+        }
+        .line {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .line:before, .line:after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #ddd;
+        }
+        .line:before {
+            margin-right: 10px;
+        }
+        .line:after {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-title">LOGIN BOS!!</div>
+        <input type="text" class="login-input" placeholder="No. Handphone/Email/Username">
+        <input type="password" class="login-input" placeholder="Password">
+        <button class="login-button">Log in</button>
+        <a href="#" class="forgot-link">Lupa?</a>
+        <a href="#" class="register-link">Daftar</a>
+        <div class="line">ATAU</div>
+        <div class="alternate-login">
+            <a href="https://wa.me/your-number-here" target="_blank">
+                <button style="background-color: #34af23; color: white;">
+                    <img src="whatsaap.png"style="height:20px; margin-right: 5px;">
+                    Log In with WhatsApp
+                </button>
+            </a>
+            <a href="https://id-id.facebook.com/login.php/" target="_blank">
+                <button style="background-color: #0d4df1; color: white;">
+                    <img src="facebook (1).png"style="height:20px; margin-right: 5px;">
+                    Log In With Facebook
+                </button>
+            </a>
+            <a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1" target="_blank">
+                <button style="background-color: #f10d24; color: white;">
+                    <img src="google.png"style="height:20px; margin-right: 5px;">
+                    Log In with Google
+                </button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
